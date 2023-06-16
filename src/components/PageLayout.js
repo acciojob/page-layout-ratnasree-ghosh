@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 
 
-const PageLayout = ({children}) => {
+
+const PageLayout = ({header,footer,children}) => {
   return (
     <div>
-        <Header content="welcome to my website"/>
+        <h1>{header}</h1>
         {children}
-        <Footer content="© 2023 My Website.All rghts reserved"/>
+        <p>{footer}</p>
     </div>
   )
 }
